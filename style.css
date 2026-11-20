@@ -1,0 +1,156 @@
+/* =========================================================
+   General Page Styling with Professional Academic Background
+   ========================================================= */
+body {
+    /* Fallback color if offline */
+    background-color: #f1f5f9;
+
+    /* Soft light overlay + high-resolution university library background image */
+    background-image:
+        linear-gradient(rgba(241, 245, 249, 0.84), rgba(226, 232, 240, 0.90)),
+        url("https://images.unsplash.com/photo-1632660609710-ca2ee0c3425b?auto=format&fit=crop&w=1920&q=80");
+
+    /* To use a local image instead, create an 'images' folder and replace the url above with:
+       url("../images/bg.jpg"); */
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: #1e293b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================================
+   Header Styling
+   ========================================================= */
+.app-header {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 58, 138, 0.92) 55%, rgba(37, 99, 235, 0.90) 100%);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-bottom: 4px solid #1d4ed8;
+}
+
+/* =========================================================
+   Cards Styling (Frosted Glass Effect & Subtle Hover)
+   ========================================================= */
+.custom-card {
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.13) !important;
+}
+
+.card-header {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-top-left-radius: 14px !important;
+    border-top-right-radius: 14px !important;
+}
+
+/* =========================================================
+   Form Controls
+   ========================================================= */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 0.6rem 0.85rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.18);
+}
+
+/* =========================================================
+   Buttons Styling
+   ========================================================= */
+.btn {
+    border-radius: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+}
+
+/* =========================================================
+   Error Alert Box
+   ========================================================= */
+#errorMessageBox {
+    background-color: rgba(254, 226, 226, 0.96);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border-left: 5px solid #dc2626;
+}
+
+/* =========================================================
+   Tables Inside Display Areas
+   ========================================================= */
+.table {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.table thead th {
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #475569;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+/* =========================================================
+   Empty State Placeholder
+   ========================================================= */
+.empty-state {
+    background-color: rgba(248, 250, 252, 0.85);
+    border: 1px dashed #94a3b8;
+    border-radius: 10px;
+}
+
+/* =========================================================
+   Footer Styling
+   ========================================================= */
+footer {
+    background-color: rgba(255, 255, 255, 0.90) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+/* =========================================================
+   Responsive Adjustments
+   ========================================================= */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-header h1 {
+        font-size: 1.35rem;
+    }
+
+    .card-body {
+        padding: 1.25rem !important;
+    }
+}
